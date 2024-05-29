@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "material-lister",
+	"version": "${version}",
+	"name": "Material Lister",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/material-lister/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.njackal.materials.MaterialLister"
+		],
+		"client": [
+			"com.njackal.materials.MaterialListerClient"
+		]
+	},
+	"mixins": [
+		"material-lister.mixins.json",
+		{
+			"config": "material-lister.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
