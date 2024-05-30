@@ -3,7 +3,8 @@
 	"package": "com.njackal.materials.mixin.client",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-		"ExampleClientMixin"
+		"ExampleClientMixin",
+		"litematica.MixinGuiMaterialListScreen"
 	],
 	"injectors": {
 		"defaultRequire": 1
